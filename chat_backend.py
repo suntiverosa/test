@@ -20,7 +20,7 @@ def openai_translate(texto_usuario):
     completion = client.chat.completions.create(
         model="gpt-4o-mini",
         messages=[
-            {"role": "system", "content": "You will be provided with a sentence in chinese, and your task is to translate it into spanish, do not translate if the word or phrase is in capital letters"},
+            {"role": "system", "content": "You will be provided with a sentence in any language and your task is to translate it into language indicated"},
             {
                 "role": "user",
                 "content": texto_usuario
