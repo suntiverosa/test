@@ -1,5 +1,5 @@
 // *Establecer conexión WebSocket
-const websocket = new WebSocket("ws://127.0.0.1:8000/ws/chat");
+const websocket = new WebSocket("ws://44.243.115.79:8000/ws/chat");
 
 // Manejar eventos de WebSocket
 websocket.onopen = () => console.log("Conexión WebSocket abierta");
